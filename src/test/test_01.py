@@ -32,3 +32,11 @@ def test_0106():
     box = PyBox()
     with pytest.raises(ValueError):
         box.getOrElseThrow(ValueError, "exception raised")
+        
+def test_0107():
+    box = PyBox()
+    assert box.get() == None
+    
+def test_0108():
+    box = PyBox()
+    assert box.getOrElseReturn("no element") == "no element"

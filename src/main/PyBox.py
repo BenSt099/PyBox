@@ -16,7 +16,14 @@ class PyBox:
             self.boxObj.append(obj)
 
     def get(self):
-        return self.boxObj[0]
+        if len(self.boxObj) == 1:
+            return self.boxObj[0]
+        return None
+    
+    def getOrElseReturn(self, retObj):
+        if len(self.boxObj) == 1:
+            return self.boxObj[0]
+        return retObj
 
     def clear(self):
         self.boxObj.clear()
