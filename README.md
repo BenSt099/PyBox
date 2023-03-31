@@ -19,6 +19,7 @@ put(object)
 get()
 isPresent()
 clear()
+getOrElseThrow(Exception, message)
 ```
 
 ## License
