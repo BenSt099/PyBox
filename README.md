@@ -16,10 +16,17 @@ The following methods are provided:
 
 ```python
 put(object)
+
 get()
-isPresent()
-clear()
+
+getOrElseReturn(retObj)
+
 getOrElseThrow(Exception, message)
+
+isPresent()
+
+clear()
+
 ```
 
 ## License
